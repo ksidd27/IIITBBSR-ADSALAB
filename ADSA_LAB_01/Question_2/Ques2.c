@@ -11,11 +11,14 @@ int ternarySrch(int min, int high, int arr[], int x, int *count1){
         (*count1)++;
         if (arr[mid1] == x) {
             printf("Key found in Ternary Search At index %d\n",mid1);
+            printf("Number of Comparisons in: %d\n", *count1);
             return 0;
         }
         (*count1)++;
         if (arr[mid2] == x) {
             printf("Key found in Ternary Search At index %d\n",mid2);
+            printf("Number of Comparisons : %d\n", *count1);
+
             return 0;
         }
 
@@ -41,6 +44,8 @@ int binarySrch(int min, int high, int arr[], int x, int *count2){
         (*count2)++;
         if (arr[mid] == x) {
             printf("Key found in Binary Search At index %d\n",mid);
+            printf("Number of Comparisons : %d", *count2);
+
             return 0;
         }
 
