@@ -2,17 +2,19 @@
 
 //ternary Search and Binary Search
 
-int ternarySrch(int min, int high, int arr[], int x){
+int ternarySrch(int min, int high, int arr[], int x, int *count1){
     
     while (min <= high) {
         int mid1 = min + (high - min) / 3;
         int mid2 = high - (high - min) / 3;
 
+        (*count1)++;
         if (arr[mid1] == x) {
             printf("Key found in Ternary Search At index %d\n",mid1);
             return 0;
         }
-        else if (arr[mid2] == x) {
+        (*count1)++;
+        if (arr[mid2] == x) {
             printf("Key found in Ternary Search At index %d\n",mid2);
             return 0;
         }
@@ -31,12 +33,12 @@ int ternarySrch(int min, int high, int arr[], int x){
     return -1;
 }
 
-int binarySrch(int min, int high, int arr[], int x){
+int binarySrch(int min, int high, int arr[], int x, int *count2){
 
     while(min<=high){
         int mid = min + (high - min) / 2;
         
-
+        (*count2)++;
         if (arr[mid] == x) {
             printf("Key found in Binary Search At index %d\n",mid);
             return 0;
@@ -53,7 +55,9 @@ int binarySrch(int min, int high, int arr[], int x){
 }
 
 int main() {
-    
+
+    int count1=0;
+    int count2=0;
     int n;
     printf("Enter Size of Array :");
     scanf("%d", &n);
@@ -69,11 +73,11 @@ int main() {
     scanf("%d",&x);
 
     
-    int element=ternarySrch(min,high,arr,x);
+    int element=ternarySrch(min,high,arr,x,&count1);
     if(element == -1)
     printf("Not found in Ternary Search\n");
 
-    int element2=binarySrch(min,high,arr,x);
+    int element2=binarySrch(min,high,arr,x,&count2);
     if(element2 == -1)
     printf("Not Found in Binary Search\n");
     return 0;
