@@ -59,9 +59,11 @@ int main() {
     printf("\nAverage Increasing Order of Functions (n = 2 to 128):\n");
     for (int i = 0; i < 12; i++) {
         printf("%s", names[i]);
-        if (i < 11) printf(" < ");
+        if (i < 11) printf("  <  ");
     }
     printf("\n");
 
     return 0;
 }
+
+
