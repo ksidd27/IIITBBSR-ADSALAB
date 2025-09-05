@@ -45,6 +45,7 @@ It has a guaranteed **time complexity of O(n log n)** for all cases, making it e
 ---
 
 ## 🧮 Example Run
+**Input:**
 Enter Number of Element: 6
 
 Enter Array Elements: 12 3 19 6 5 14
@@ -52,6 +53,6 @@ Enter Array Elements: 12 3 19 6 5 14
 
 **Output:**
 Original Array : 12 3 19 6 5 14
+
 Array after performing heap sort: 3 5 6 12 14 19
 
-**Input:**
