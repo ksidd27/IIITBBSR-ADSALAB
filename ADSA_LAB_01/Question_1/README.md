@@ -36,13 +36,14 @@ These constants and small subtractions do **not** affect the asymptotic growth o
 ---
 
 ## 📈 Asymptotic Growth Order
-1/n < log₂(n) < √n (both 12√n and 50√n) < n^0.51 < n·log₂(n) < n² (both n²−324 and 100n²+6n) < n³ (2n³) < n^(log₂ n) < 3^n < 2^n 
+The theoretical increasing order of the functions is:
+1/n < log₂(n) < √n (both 12√n and 50√n) < n^0.51 < n·log₂(n) < n² (both n²−324 and 100n²+6n) < 2n^3 < n^(log₂ n) < 3^n < 2^n 
 
 ---
 
 ## 🖥️ Program Output (Example for N = 2^20)
 
-When running the program with `N = 1,048,576 (2^20)`, the output order is:
+When running the program with `N = 1,048,576 (2^20)`, the output order is: 
 1/n < log2(n) < 12sqrt(n) < 50sqrt(n) < n^0.51 < n*log(n) < n^2-324 < 100n^2+6n < 2n^3 < n^log(n) < 3^n < 2^n
 
 This matches the **asymptotically correct growth order**.
@@ -63,6 +64,3 @@ Therefore, we corrected it to:
 f12(n) = 2^n
 
 Now the function grows much faster than all polynomials and logarithmic terms, fitting correctly at the top of the order.
-
-The theoretical increasing order of the functions is:
-
