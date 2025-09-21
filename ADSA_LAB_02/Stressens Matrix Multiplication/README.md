@@ -10,9 +10,8 @@ It improves over the **classical \(O(n^3)\)** algorithm by reducing the number o
 Strassen’s algorithm is a **recursive matrix multiplication method** that reduces the multiplication count from 8 (in standard divide-and-conquer) to 7 for two \(2 \times 2\) matrices.  
 This reduces the overall time complexity from:
 
-\[
-\O(n^3) \quad \text{(classical)} \quad \to \quad O(n^{\log_2 7}) \approx O(n^{2.81})
-\]
+$O(n^3) \to O(n^{\log_2 7}) \approx O(n^{2.81})$
+
 
 ---
 
