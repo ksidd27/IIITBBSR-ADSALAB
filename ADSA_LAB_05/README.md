@@ -1,6 +1,6 @@
 # Maximum Bipartite Matching
 
-This project implements **Maximum Bipartite Matching** in C using **Depth-First Search (DFS)** based augmenting paths, also known as **Kuhn’s Algorithm**.
+This project implements **Maximum Bipartite Matching** in C using **Depth-First Search (DFS)**.
 
 ---
 
