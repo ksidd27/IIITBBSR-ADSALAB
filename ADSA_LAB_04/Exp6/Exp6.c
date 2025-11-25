@@ -38,7 +38,7 @@ void prims() {
 
     selected[0] = 1;
 
-    printf("\nEdges in MST using Prim’s Algorithm:\n");
+    printf("\nEdges in MST using Prim's Algorithm:\n");
     while (edgeCount < n - 1) {
         min = INF;
         x = 0;
@@ -62,7 +62,7 @@ void prims() {
         selected[y] = 1;
         edgeCount++;
     }
-    printf("Total cost of MST (Prim’s): %d\n", totalCost);
+    printf("Total cost of MST (Prim's): %d\n", totalCost);
 }
 
 // ---------- Kruskal’s Algorithm ----------
@@ -86,7 +86,7 @@ void kruskal() {
     for (i = 0; i < n; i++)
         parent[i] = i;
 
-    printf("\nEdges in MST using Kruskal’s Algorithm:\n");
+    printf("\nEdges in MST using Kruskal's Algorithm:\n");
 
     while (edges < n - 1) {
         min = INF;
@@ -108,7 +108,7 @@ void kruskal() {
         totalCost += min;
         edges++;
     }
-    printf("Total cost of MST (Kruskal’s): %d\n", totalCost);
+    printf("Total cost of MST (Kruskal's): %d\n", totalCost);
 }
 
 // ---------- Main Function ----------
